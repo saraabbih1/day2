@@ -1,16 +1,20 @@
 #include<stdio.h>
-
 int main(){
-    int N,i,s;
-    printf("donner le nombre n:");
-    scanf("%d",&N);
+    int nombre,puissance,pow;
+    printf("donner le nombre :");
+    scanf("%d",&nombre);
 
-    s=0;
-    for(i=1;i<=N;i++){
-        s+=i;
+    printf("donner la puissance de nombre:");
+    scanf("%d",&puissance);
+    if(puissance==0){
+        pow=1;
     }
-    printf("total is :%d",s);
-    return 0;
 
+    else{
+        for(int i=0;i<puissance;i++){
+    pow*=nombre;
+    }}
+    printf("pow est : %d",pow);
+    return 0;
 
 }
